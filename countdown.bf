@@ -23,13 +23,16 @@ AND NUMBER OF  9   9  : @4 @5
 LOOP UNTIL SECOND DIGIT @5 DOWN TO ZERO
 
 [           LOOP@4
-  >>++++++++++.[-]<<    LINEBREAK
-  >[        LOOP@5
-    <<.       PRN @3
-    ->>-      DEC @3 / DEC @5
-  ]<<.      PRN 0@3
-  <->>-     DEC @2 / DEC @4
-  <<.>>     PRN@2 / STAY @4
+  >[                    LOOP@5
+    >>++++++++++.[-]<<  LINEBREAK
+    <<<.>.              PRN @2 / PRN @3
+    ->>-                DEC @3 / DEC @5
+  ]<<<.>.               PRN @2 / PRN 0@3
+
+  -<-                   DEC @3 / DEC @2
+  <<+++++++++           SET 9@0
+  [>>>+>>+<<<<<]        ADD @3 and @5 WITH 9@0
+  >>>>                  @4
 ]
 
 
