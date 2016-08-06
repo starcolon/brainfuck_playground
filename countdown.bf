@@ -36,5 +36,15 @@ LOOP UNTIL SECOND DIGIT @5 DOWN TO ZERO
   <                       @4
 ]
 
+LOOP @5
+
+>[                    LOOP@5
+  >>++++++++++.[-]<<  LINEBREAK
+  <<<.>.              PRN @2 / PRN @3
+  ->>-                DEC @3 / DEC @5
+]
+>>++++++++++.[-]<<    LINEBREAK
+<<<.>.                PRN @2 / PRN 0@3
+
 
 
