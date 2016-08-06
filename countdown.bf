@@ -27,7 +27,9 @@ LOOP UNTIL SECOND DIGIT @5 DOWN TO ZERO
     >>++++++++++.[-]<<  LINEBREAK
     <<<.>.              PRN @2 / PRN @3
     ->>-                DEC @3 / DEC @5
-  ]<<<.>.               PRN @2 / PRN 0@3
+  ]
+  >>++++++++++.[-]<<    LINEBREAK
+  <<<.>.                PRN @2 / PRN 0@3
 
   -<-                   DEC @3 / DEC @2
   <<+++++++++           SET 9@0
